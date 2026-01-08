@@ -1,0 +1,23 @@
+﻿@model Category
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Category</title>
+</head>
+<body>
+    <h1>Create Category</h1>
+
+    <form method="post" action="/categories/store">
+        <label>Category Name</label>
+        <input name="Name" type="text" class="form-control"/>
+
+        <label>Category Description</label>
+        <input name="Description" type="text" class="form-control"/>
+
+
+        <button type="submit" class="btn btn-success mt-3">Create</button>
+    </form>
+
+</body>
+</html>

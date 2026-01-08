@@ -1,0 +1,22 @@
+﻿@model IEnumerable<MvcTask1.Models.Category>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Categories</title>
+</head>
+<body>
+    <h1>All Categories</h1>
+
+    <a href="/Categories/Create">Create New Category</a>
+
+    @foreach (var item in Model)
+    {
+        <h2>Name: @item.Name</h2>
+        <p>Description: @item.Description</p>
+        <a href="/Categories/Details/@item.Id" class="btn btn-info">Details</a>
+        <a href="/Categories/Delete/@item.Id" class="btn btn-info">Delete</a>
+
+    }
+</body>
+</html>
